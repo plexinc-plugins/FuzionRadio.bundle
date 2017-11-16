@@ -18,7 +18,7 @@ def MainMenu():
 	oc = ObjectContainer()
 
 	oc.add(CreateTrackObject(
-		title = 'FuzionRadio.FM',
+		title = TITLE,
 		url = STREAM_URL
 	))
 
