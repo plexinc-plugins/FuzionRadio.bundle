@@ -1,4 +1,4 @@
-TITLE = 'FuzionRadio'
+TITLE = 'FuzionRadio.FM'
 PREFIX = '/music/fuzionradio'
 ICON = 'icon-default.jpg'
 ART = 'art-default.jpg'
@@ -18,7 +18,7 @@ def MainMenu():
 	oc = ObjectContainer()
 
 	oc.add(CreateTrackObject(
-		title = 'FuzionRadio',
+		title = 'FuzionRadio.FM',
 		url = STREAM_URL
 	))
 
@@ -38,7 +38,7 @@ def CreateTrackObject(title, url, include_container=False, **kwargs):
 					PartObject(key=Callback(PlayAudio, url=url, ext='mp3'))
 				],
 				container = Container.MP3,
-				bitrate = 128,
+				bitrate = 192,
 				audio_codec = AudioCodec.MP3,
 				audio_channels = 2
 			)
